@@ -26,7 +26,6 @@
         // 날짜 및 시간 가져오는 방법 : new Date
         const time = new Date()
 
-        const day = time.getDay()
         const hours = String(time.getHours()).padStart(2, '0')
         // 시간
         const min = String(time.getMinutes()).padStart(2, '0')
@@ -46,7 +45,14 @@
 
     // 아날로그 시계 만들기???????
 
-    // p태그 자체에 넣을수도 있음
+    // p태그 자체에 넣을수도 있음(span 설정 안해도 됨!)
+    // html>>
+    // <p></p>
+
+    // js>>
+    // pEl = document.querySelector('p')
     // pEl.innerHTML = `${hours} : ${} : ${}`
+
+    // 팝업창 오늘은 그만보기도 타임펑션으로 하는거임!!!!
 
 })()
